@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import style from  "../CSS/LandingPage.module.css"
+import style from "../CSS/LandingPage.module.css"
 import ReaderPage from '../components/ReaderPage'
 import Form from '../components/Form'
 import Card_display from '../components/Card_display'
@@ -8,20 +8,23 @@ import CustomCard from '../components/CustomCard'
 import Testimonial from '../components/Testimonial'
 import CoverLetter from '../components/CoverLetter'
 import Footer from '../components/Footer'
+// import style from "@/app/CSS/LandingPage.module.css"
 
 const LandingPage = () => {
     return (
         <>
             <Navbar />
-            <div className={style.ReaderSection}>
+            {/* <div className={style.ReaderSection}>
                 <ReaderPage />
                 <Form />
-            </div>
+            </div> */}
+
             <Card_display />
-            <CustomCard />
-            <Testimonial />
-            <CoverLetter />
-            <Footer />
+
+            {/* <CustomCard /> */}
+            {/* <Testimonial /> */}
+            {/* <CoverLetter /> */}
+            {/* <Footer /> */}
         </>
     )
 }
