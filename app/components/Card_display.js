@@ -23,9 +23,9 @@ const Card_display = () => {
                 </div>
                 <div className={style.card_display_cont}>
 
-                    {Data.map((ele) => {
+                    {Data.map((ele, ind) => {
                         return (
-                            <Card data={[ele]} />
+                            <Card data={[ele]} key={ind} />
                         )
                     })}
                 </div>
